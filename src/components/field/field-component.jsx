@@ -25,6 +25,7 @@ const Field = () => {
       const response = await fetch('https://zvcz2xe5bwzfzdozd2mxazfcfu0mcxad.lambda-url.us-east-1.on.aws/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        mode: 'nocors',
         body: JSON.stringify(data),
       });
   
